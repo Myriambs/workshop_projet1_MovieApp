@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import movieSlice from './movieSlice'
-
+import authSlice from './authSlice'
 export default configureStore({
     reducer:{
-        movie:movieSlice
+        movie:movieSlice,
+        authuser : authSlice
     }
 })
